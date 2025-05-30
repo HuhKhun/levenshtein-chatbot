@@ -139,11 +139,11 @@ class LevenshteinChatbot:
         answer = self.answers[best_idx]
         
         # 디버깅 정보 출력 (선택사항)
-        print(f"\n[디버그 정보]")
-        print(f"입력 질문: {user_question}")
-        print(f"가장 유사한 질문: {similar_question}")
-        print(f"레벤슈타인 거리: {distance:.4f}")
-        print(f"선택된 답변: {answer}")
+       # print(f"\n[디버그 정보]")
+        #print(f"입력 질문: {user_question}")
+        #print(f"가장 유사한 질문: {similar_question}")
+        #print(f"레벤슈타인 거리: {distance:.4f}")
+        #print(f"선택된 답변: {answer}")
         
         return answer
     
@@ -211,9 +211,9 @@ if __name__ == "__main__":
         print(f"\n챗봇: {response}")
         
         # 상위 3개 유사 질문 표시 (선택사항)
-        print("\n[참고: 유사한 질문들]")
-        top_k = chatbot.get_top_k_responses(user_input, k=3)
-        for i, (q, a, d) in enumerate(top_k, 1):
-            print(f"{i}. 질문: {q}")
-            print(f"   답변: {a}")
-            print(f"   거리: {d:.4f}")
+        #print("\n[참고: 유사한 질문들]")
+        #top_k = chatbot.get_top_k_responses(user_input, k=3)
+        #for i, (q, a, d) in enumerate(top_k, 1):
+         #   print(f"{i}. 질문: {q}")
+          #  print(f"   답변: {a}")
+           # print(f"   거리: {d:.4f}")
